@@ -1,0 +1,6 @@
+use_frameworks!
+target 'YWFlutterSDK_Tests' do
+  pod 'YWFlutterSDK', :path => '../'
+  
+  
+end
