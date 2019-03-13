@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		449C50712238991600CF4E46 /* YWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 449C50702238991600CF4E46 /* YWTestViewController.m */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -16,9 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15240CE20DE0649C758F7003 /* YWFlutterSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YWFlutterSDK.podspec; path = ../YWFlutterSDK.podspec; sourceTree = "<group>"; };
+		15240CE20DE0649C758F7003 /* YWFlutterSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YWFlutterSDK.podspec; path = ../YWFlutterSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2AA53A2B74B8B29D0E690665 /* Pods_YWFlutterSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YWFlutterSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		424F76F0999577B684BC9ADD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		424F76F0999577B684BC9ADD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		449C506F2238991600CF4E46 /* YWTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWTestViewController.h; sourceTree = "<group>"; };
+		449C50702238991600CF4E46 /* YWTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWTestViewController.m; sourceTree = "<group>"; };
 		5CCED6BEEB121DA3AA5B6810 /* Pods-YWFlutterSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWFlutterSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWFlutterSDK_Tests/Pods-YWFlutterSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -29,7 +32,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		9229FDBF203FA99F5A15D201 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9229FDBF203FA99F5A15D201 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CC1482DEC89C33A17E938EC6 /* Pods-YWFlutterSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWFlutterSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWFlutterSDK_Tests/Pods-YWFlutterSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
+				449C506F2238991600CF4E46 /* YWTestViewController.h */,
+				449C50702238991600CF4E46 /* YWTestViewController.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -129,6 +134,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				4166036A672550891D72C166 /* [CP] Embed Pods Frameworks */,
+				3B05A2F464762085D6DD516F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +190,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B05A2F464762085D6DD516F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YWFlutterSDK_Tests/Pods-YWFlutterSDK_Tests-resources.sh",
+				"${PODS_ROOT}/../../YWFlutterSDK/Resources/flutter_assets",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/flutter_assets",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YWFlutterSDK_Tests/Pods-YWFlutterSDK_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4166036A672550891D72C166 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,13 +221,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YWFlutterSDK_Tests/Pods-YWFlutterSDK_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YWFlutterSDK/YWFlutterSDK.framework",
+				"${PODS_ROOT}/../../YWFlutterSDK/Framework/App.framework",
+				"${PODS_ROOT}/../../YWFlutterSDK/Framework/Flutter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YWFlutterSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -235,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449C50712238991600CF4E46 /* YWTestViewController.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

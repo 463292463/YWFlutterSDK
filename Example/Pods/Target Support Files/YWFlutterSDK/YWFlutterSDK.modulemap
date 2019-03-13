@@ -1,0 +1,6 @@
+framework module YWFlutterSDK {
+  umbrella header "YWFlutterSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

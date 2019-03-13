@@ -1,0 +1,16 @@
+PODS:
+  - YWFlutterSDK (0.0.1)
+
+DEPENDENCIES:
+  - YWFlutterSDK (from `../`)
+
+EXTERNAL SOURCES:
+  YWFlutterSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YWFlutterSDK: 01a381d4fcc43d2e2d2e924cb1599c9df795ae3c
+
+PODFILE CHECKSUM: a639020ff13bbcace534feb32c15cc3a3b23c30e
+
+COCOAPODS: 1.5.3
